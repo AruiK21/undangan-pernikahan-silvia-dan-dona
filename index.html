@@ -281,6 +281,28 @@ label{
     font-family:'Alex Brush';
     font-size:45px;
 }
+
+
+    .background{
+    position:relative;
+}
+
+.content{
+    position:absolute;
+    top:120px;
+    left:0;
+    width:100%;
+    z-index:2;
+}
+
+.kubah-overlay{
+    position:sticky;
+    top:0;
+    width:100%;
+    z-index:999;
+    pointer-events:none;
+}
+    
 /* =====================
         RSVP
 ===================== */
@@ -549,10 +571,12 @@ label{
 
 <div class="container">
 
+<div class="frame">
 
+    <img src="https://cdn.jsdelivr.net/gh/AruiK21/background-ni-sil@main/bg.jpg" class="bg">
 
 <!-- COVER -->
-
+<div class="isi">
 <div class="section cover">
 
 
@@ -867,8 +891,9 @@ berkenan hadir.
 
 
 </div>
-
-
+</div>
+    <img src="https://cdn.jsdelivr.net/gh/AruiK21/background-ni-sil@main/bg-overlay.png" class="overlay"]
+</div>
 
 </div>
 
