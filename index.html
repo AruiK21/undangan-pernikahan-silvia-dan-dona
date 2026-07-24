@@ -287,20 +287,40 @@ label{
     position:relative;
 }
 
-.content{
-    position:absolute;
-    top:120px;
-    left:0;
+.frame{
+    position:relative;
+
     width:100%;
+    min-height:100vh;
+
+    background-image:url("https://cdn.jsdelivr.net/gh/AruiK21/background-ni-sil@main/bg.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-attachment:fixed;
+}
+
+
+.isi{
+    position:relative;
     z-index:2;
 }
 
-.kubah-overlay{
-    position:sticky;
-    top:0;
+.overlay{
+    position:fixed;
+    bottom:0;
+    left:0;
+
     width:100%;
-    z-index:999;
+    height:100%;
+
+    object-fit:cover;
+
     pointer-events:none;
+
+    z-index:3;
 }
     
 /* =====================
@@ -572,8 +592,6 @@ label{
 <div class="container">
 
 <div class="frame">
-
-    <img src="https://cdn.jsdelivr.net/gh/AruiK21/background-ni-sil@main/bg.jpg" class="bg">
 
 <!-- COVER -->
 <div class="isi">
