@@ -47,13 +47,11 @@ body{
     overflow-y:auto;
     overflow-x:hidden;
 
-    box-shadow:0 0 30px rgba(0,0,0,.2);
-
     background-image:url("https://cdn.jsdelivr.net/gh/AruiK21/background-ni-sil@main/bg.jpg");
 
-    background-size:cover;
+    background-size:100% auto;
 
-    background-position:center top;
+    background-position:top center;
 
     background-repeat:no-repeat;
 }
@@ -266,6 +264,12 @@ label{
 
 .frame{
     position:relative;
+
+    width:100%;
+
+    min-height:100%;
+
+    overflow:hidden;
 }
 
 
@@ -285,7 +289,6 @@ label{
 
     pointer-events:none;
 }
-
 
 .isi{
     position:relative;
