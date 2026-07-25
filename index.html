@@ -47,13 +47,9 @@ body{
     overflow-y:auto;
     overflow-x:hidden;
 
-    background-image:url("https://cdn.jsdelivr.net/gh/AruiK21/background-ni-sil@main/bg.jpg");
+    position:relative;
 
-    background-size:100% auto;
-
-    background-position:top center;
-
-    background-repeat:no-repeat;
+    box-shadow:0 0 30px rgba(0,0,0,.2);
 }
 
 /* =====================
@@ -261,20 +257,8 @@ label{
     .background{
     position:relative;
 }
-
-.frame{
-    position:relative;
-
-    width:100%;
-
-    min-height:100%;
-
-    overflow:hidden;
-}
-
-
-.overlay{
-    position:absolute;
+.bg-fixed{
+    position:fixed;
 
     top:0;
     left:50%;
@@ -282,17 +266,45 @@ label{
     transform:translateX(-50%);
 
     width:100%;
+    max-width:430px;
+
+    height:100vh;
+
+    background-image:url("https://cdn.jsdelivr.net/gh/AruiK21/background-ni-sil@main/bg.jpg");
+
+    background-size:cover;
+
+    background-position:center top;
+
+    background-repeat:no-repeat;
+
+    z-index:0;
+}
+
+
+.overlay{
+    position:fixed;
+
+    top:0;
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:100%;
+    max-width:430px;
 
     height:auto;
 
-    z-index:3;
+    z-index:2;
 
     pointer-events:none;
 }
 
+
 .isi{
     position:relative;
-    z-index:2;
+
+    z-index:3;
 }
     
 /* =====================
@@ -563,7 +575,9 @@ label{
 
 <div class="container">
 
-<div class="frame">
+<div class="bg-fixed">
+
+<img src="https://cdn.jsdelivr.net/gh/AruiK21/background-ni-sil@main/bg-overlay.png" class="overlay">
 
 <!-- COVER -->
 <div class="isi">
@@ -881,8 +895,6 @@ berkenan hadir.
 
 
 </div>
-</div>
-    <img src="https://cdn.jsdelivr.net/gh/AruiK21/background-ni-sil@main/bg-overlay.png" class="overlay">
 </div>
 
 </div>
